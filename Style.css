@@ -1,0 +1,74 @@
+:root {
+    --main-color: #2c3e50;
+    --secondary-color: #3498db;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.logo {
+    width: 150px;
+    margin: 20px auto;
+    display: block;
+}
+
+.header {
+    font-weight: bold;
+}
+
+.my-5 {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.qr-section {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.qr-code {
+    width: 250px;
+    height: 250px;
+    background: #eee;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.copy-text {
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.copy-text:hover {
+    color: var(--secondary-color);
+}
+
+.social-icons a {
+    color: var(--main-color);
+    font-size: 24px;
+    margin: 0 15px;
+    transition: all 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+#copiedAlert {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}

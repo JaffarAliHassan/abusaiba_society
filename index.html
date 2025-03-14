@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الموقع الإلكتروني</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<!-- الشعار -->
+<header class="container">
+    <img src="logo.png" alt="الشعار" class="logo">
+</header>
+
+<!-- النص -->
+<section class="container text-center my-5">
+    <p class="lead header">حملة توفير مقر ومبنى جمعية أبوصيبع الخيرية</p>
+    <p class="lead">ساهم في دعم الحملة</p>
+</section>
+
+<!-- قسم QR كود -->
+<div class="container">
+    <div class="qr-section">
+        <div class="qr-code">
+            <!-- ضع صورة QR كود هنا -->
+            <img src="qr-placeholder.jpg" alt="QR Code" class="img-fluid">
+        </div>
+        <p class="text-center copy-text" style="font-size: 1.25rem;" onclick="copyText()">
+            <small class="text-muted">(اضغط لنسخ الآيبان)</small>
+            <br>
+            <span id="textToCopy">BH64BIBB00100001673501</span>
+        </p>
+        <p class="lead text-center">رقم الترخيص: 190/ج/خ/2024</p>
+    </div>
+</div>
+
+<!-- وسائل التواصل الاجتماعي -->
+<div class="container text-center my-5">
+    <div class="social-icons">
+        <!-- <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a> -->
+        <a href="https://www.instagram.com/abusaiba_society/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/+97339300081" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+</div>
+
+<!-- تنبيه النسخ -->
+<div id="copiedAlert" class="alert alert-success alert-dismissible fade show" role="alert">
+    تم نسخ الرابط بنجاح!
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="Script.js"></script>
+
+</body>
+</html>
